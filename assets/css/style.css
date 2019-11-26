@@ -95,6 +95,7 @@ USER CARD
 
 
 .userDescription {
+    margin-top: 20px;
     text-align: center;
     line-height: 20px;
     max-height: 40px;
@@ -102,5 +103,26 @@ USER CARD
     text-overflow: ellipsis;
     white-space: normal;
     overflow: hidden;
+    margin-bottom: 30px;
 
+}
+
+.userContactsContainer{
+
+    margin-top: auto;
+
+
+}
+
+.userContactsContainer > a{
+    font-size: 0;
+}
+
+.userContactsContainer > a + a {
+
+    margin-left: 10px;
+}
+
+.userContactsContainer > a > img {
+    height: 20px;
 }
