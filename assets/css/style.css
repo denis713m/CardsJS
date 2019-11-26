@@ -11,9 +11,6 @@ body {
 
 }
 
-
-
-
 .flexContainer {
     display: flex;
 }
@@ -97,14 +94,20 @@ USER CARD
 .userDescription {
     margin-top: 20px;
     text-align: center;
-    line-height: 20px;
-    max-height: 40px;
     width: calc(100% - 20px * 2);
-    text-overflow: ellipsis;
-    white-space: normal;
-    overflow: hidden;
     margin-bottom: 30px;
+    white-space: normal;
 
+    line-height: 20px;
+
+    /*
+    чтобы троеточие было и максимум две линии текста
+    */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
 }
 
 .userContactsContainer{
