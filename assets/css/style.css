@@ -1,1 +1,106 @@
 @import "reset.css";
+
+body {
+    font-family: sans-serif;
+}
+
+#usersList {
+    background-color: #FF8C00;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+
+
+
+
+.flexContainer {
+    display: flex;
+}
+
+
+.flexWrap {
+
+    flex-wrap: wrap;
+
+}
+
+.justifyContentEvenly {
+    justify-content: space-evenly;
+}
+
+/*
+USER CARD
+
+*/
+
+
+.userCardWrapper {
+
+    max-width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.alignItemCenter {
+    align-items: center;
+}
+
+
+.userPictureContainer {
+    border-radius: 50px;
+
+    width: 100px;
+    height: 100px;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+.userPictureContainer > img {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    object-fit: cover;
+
+    width: inherit;
+    height: inherit;
+
+    transform: translate(-50%, -50%);
+}
+
+
+.userFullName {
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+
+.userFullNameMargin {
+    margin-top: 15px;
+}
+
+
+.userDescription {
+    text-align: center;
+    line-height: 20px;
+    max-height: 40px;
+    width: calc(100% - 20px * 2);
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+
+}
